@@ -3,3 +3,13 @@ select employees_backup.employees.*
 from employees.employees 
 right join employees_backup.employees on employees.employees.emp_no=employees_backup.employees.emp_no 
 where employees.employees.emp_no is null;
+
+
+
+
+
+use dictionary;
+
+load data infile '/var/lib/mysql-files/words.txt'  
+into table word 
+lines terminated by "\r\n";
