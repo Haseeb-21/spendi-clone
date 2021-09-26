@@ -1,0 +1,6 @@
+import mysql.connector
+
+hostname = input("Enter host to connect to (localhost): ")
+port = input("Enter port to connect to (3306): ")
+user = input("Enter user to connect with (root): ")
+password = input(f"Enter password for user '{user}': ")
